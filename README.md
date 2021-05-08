@@ -8,3 +8,11 @@ A very simple state machine with 3 states and 2 events, where "Initial" is the i
 |    Initial        | In delivery  |     Delivered     |
 |    In delivery    | In delivery  |     Delivered     |
 |    Delivered      |    error     |        error      |
+
+## Example 2: traffic light
+Another example with a traffic light where the next status is an object (status + time):
+| State ↓ / Event → |       Timer       |
+|-------------------|-------------------|
+|    Red            | After 15s: green  |
+|    Orange         | After 3s: red     |
+|    Green          | After 10s: orange |

@@ -1,4 +1,5 @@
 import StateMachineLogistics from './StateMachineLogistics';
+import StateMachineTrafficLights from './StateMachineTrafficLights';
 
 // First example: successful workflow
 const fsm1 = new StateMachineLogistics();
@@ -27,3 +28,8 @@ fsm3.messages = [
 ]
 console.log('\nStateMachineLogistics: Example 3: error')
 fsm3.process();
+
+// Traffic light example
+const fsm4 = new StateMachineTrafficLights();
+console.log('\nStateMachineTrafficLights: Example')
+fsm4.process();
